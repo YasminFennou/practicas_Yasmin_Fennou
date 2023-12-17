@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border:none;
+}
+.img {
+    width: 100%;
+}
+
+button {
+    background-color: transparent;
+    cursor:pointer;
+}
+
+:root {
+    --blue-color: rgb(19, 19, 92);
+    --white-color: #fff;
+    --lightblue-color: rgb(125, 125, 181);
+}
+
+body {
+    color: var(--white-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    position:relative;
+}
+
+.header {
+    display: flex;
+    background-color: var(--blue-color);
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.7em 2em;
+}
+
+.header-menu {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+
+.header-logo {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background-color: rgb(114, 148, 234);
+    padding: 12px;
+    -webkit-box-shadow: 0px 0px 15px 5px white;
+    box-shadow: 0px 0px 5px 5px white;
+}
+
+.header-responsiveMenuButton{
+    display: none;
+    padding: 10px;
+    width: 55px;
+    height: 55px;
+}
+
+.responsiveMenu{
+    display:none;
+    position: relative;
+    background-color: var(--lightblue-color);
+    position: absolute;
+    padding-top: 100px;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100vh; 
+}
+
+.is-active {
+    display:block;
+}
+
+.responsiveMenu-close{
+    width:20px;
+    position:absolute;
+    right:40px;
+    top:40px;
+}
+
+.main__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin: 10px;
+}
+
+.container__photo {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: rgb(114, 148, 234);
+}
+
+.main__photo {
+    margin: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+.parrafo__texto {
+    background-color: black;
+}
+
+.pie__pagina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue-color);
+}
+
+.pie__logo {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin: 40px;
+    background-color: rgb(114, 148, 234);
+    padding: 12px;
+    -webkit-box-shadow: 0px 0px 15px 5px white;
+    box-shadow: 0px 0px 5px 5px white;
+}
+
+@media screen and (max-width: 768px) {
+    .header-menuContainer {
+        display: none;
+    }
+
+    .header-responsiveMenuButton {
+        display: block;
+       
+    }
+
+    .main__container {
+        display: block;
+      
+    }
+}

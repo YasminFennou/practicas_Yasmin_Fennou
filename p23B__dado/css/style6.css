@@ -1,0 +1,33 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+
+    
+   .container {
+    height: 100vh;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+ .dado {
+    height: 100px;
+    flex-basis: 100px;
+    border-radius: 10%;
+    background-color: white;
+    border: 1px solid black; 
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+    gap: 17%;
+ }
+
+
+ .dado__bola {
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+ }

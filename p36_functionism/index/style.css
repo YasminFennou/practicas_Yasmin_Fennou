@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+}
+
+.rainbow-div {
+    flex: 1;
+    height: 100vh;
+}

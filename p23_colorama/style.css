@@ -1,0 +1,24 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+
+
+ .container {
+    padding: 20px;
+    background-color: rgb(250, 250, 238);
+    display: flow-root; /*esto se utiliza siempre que vaya a poner float para que el contenedor se adapte o display:inline-block que sirve para todos los navegadores*/
+ }
+
+
+ .left {
+    float: left;
+    width: 30%;
+    background-color: rgb(190, 250, 250);
+    
+}
+
+
+.right {
+    float: right;
+    width: 70%;
+    background-color: rgb(219, 192, 245);
+
+}

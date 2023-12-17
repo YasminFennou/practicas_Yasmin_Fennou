@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Genius</title>
+</head>
+<body>
+    <div class="container">
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos grid__circulos--foto">G</div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos grid__circulos--foto">E</div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos grid__circulos--foto">N</div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos grid__circulos--foto">I</div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos grid__circulos--foto">U</div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos grid__circulos--foto">S</div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+<div class="grid__circulos"></div>
+
+
+
+
+
+
+    </div>
+    <script>
+        const flexItems = document.querySelectorAll('.grid__circulos');
+        flexItems.forEach((flexItem,index) => {
+            const color = 'hsl('+ Math.floor(280 -(index*(280/flexItems.length)))+', 100%, 50%)';
+            flexItem.style.background = color;
+        });   
+    </script>
+    
+</body>
+</html>

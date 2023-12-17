@@ -1,0 +1,50 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    font-size: 44px;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    
+}
+
+.main__container {
+    min-height:100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    cursor: crosshair;
+}
+
+
+.wally__border {
+    border: 6px solid red;
+    margin-top: 20px;
+}
+
+.wally__poster{
+    max-width: 1000px;
+
+    /*filter:saturatate(0%)*/
+    position: relative;
+
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+
+.wally {
+    width:1.4%;
+    height:3.3%;
+    position:absolute;
+    left: 62.5%;
+    bottom: 12%;
+}

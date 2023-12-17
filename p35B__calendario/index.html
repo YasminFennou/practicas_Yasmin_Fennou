@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario 2024</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            padding: 5px;
+            border: 1px solid #ddd;
+            font-size: 12px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .calendario-container {
+            display: inline-block;
+            margin-right: 10px;
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Calendario 2024</h1>
+
+    <div id="calendarios"></div>
+
+    <script>
+        // Función para obtener los días de la semana comenzando por lunes
+        function obtenerDiasDeLaSemana() {
+            return ['Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb', 'Dom'];
+        }
+
+        // Función para obtener el nombre del mes
+        function obtenerNombreDelMes(mes) {
+            const nombresDeMes = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
+            return nombresDeMes[mes];
+        }
+
+        // Función para crear el calendario
+        function crearCalendario(anno, mes) {
+            const diasDeLaSemana = obtenerDiasDeLaSemana();
+
+            // Obtener el número de días en el mes
+            const diasEnElMes = new Date(anno, mes + 1, 0).getDate();
+
+            // Calcular el primer día de la semana (lunes)
+            const primerDia = new Date(anno, mes, 1).getDay();
+            const primerDiaSemana = (primerDia === 0) ? 6 : primerDia - 1;
+
+            // Crear la tabla del calendario
+            let calendarioHTML = '<table>';
+            
+            // Encabezado con los días de la semana
+            calendarioHTML += '<tr>';
+            for (let i = 0; i < 7; i++) {
+                calendarioHTML += '<th>' + diasDeLaSemana[i] + '</th>';
+            }
+            calendarioHTML += '</tr>';
+
+            // Rellenar los días del mes
+            let diaActual = 1;
+
+            for (let i = 0; i < 6; i++) {
+                calendarioHTML += '<tr>';
+
+                for (let j = 0; j < 7; j++) {
+                    if ((i === 0 && j >= primerDiaSemana) || (i > 0 && diaActual <= diasEnElMes)) {
+                        calendarioHTML += '<td>' + diaActual + '</td>';
+                        diaActual++;
+                    } else {
+                        calendarioHTML += '<td></td>';
+                    }
+                }
+
+                calendarioHTML += '</tr>';
+            }
+
+            calendarioHTML += '</table>';
+
+            return calendarioHTML;
+        }
+
+        // Obtener el contenedor
+        const contenedorCalendarios = document.getElementById('calendarios');
+
+        // Crear el calendario para cada mes del año 2024
+        for (let mes = 0; mes < 12; mes++) {
+            const annoActual = 2024;
+            const mesActual = mes;
+
+            // Crear el contenedor del calendario
+            const contenedorCalendario = document.createElement('div');
+            contenedorCalendario.className = 'calendario-container';
+
+            // Crear el calendario y agregarlo al contenedor
+            contenedorCalendario.innerHTML += '<h2>' + obtenerNombreDelMes(mesActual) + '</h2>';
+            contenedorCalendario.innerHTML += crearCalendario(annoActual, mesActual);
+
+            // Agregar el contenedor del calendario al contenedor principal
+            contenedorCalendarios.appendChild(contenedorCalendario);
+        }
+    </script>
+
+</body>
+</html>
+

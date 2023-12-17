@@ -1,0 +1,29 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+
+
+
+.grid__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /*repeat (3, 1FR 3FR) minmax(160px, 1fr)*/
+    gap:10px;
+    height:800px;
+    justify-items: stretch;
+    align-items: stretch;
+
+}
+
+.grid__item--1 {
+justify-self:end;
+align-self: end;
+place-self: end end;
+}
+
+.grid__item--special {
+    grid-column-start:1;
+    grid-column-end:4;
+    grid-column:span 3; 
+
+    grid-row-start: 2;
+    grid-row-end:4;
+    grid-row: span 2;
+}

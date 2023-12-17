@@ -1,0 +1,52 @@
+
+
+.solidaridad{
+    display: flex;
+    height: 100vh;
+}
+
+
+.solidaridad__yo , .solidaridad__tu {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.solidaridad__yo{
+    background-color: black;
+    color: white;
+}
+
+
+.soliradidad__dekstop--left{
+  
+}
+
+.solidaridad__responsive{
+    display: none;
+}
+
+
+@media screen and (max-width: 600px){
+    .solidaridad {
+        flex-direction:column;
+    }
+
+    .solidaridad__dekstop {
+        display: none; 
+
+    }
+
+    .solidaridad__responsive{
+        display:block;
+    }
+    .solidaridad__yo{
+        background-color: rgb(57, 201, 245);
+        color: white;
+    }
+    
+}
+
+
+

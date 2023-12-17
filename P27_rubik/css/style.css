@@ -1,0 +1,82 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+
+
+body{
+    margin: 5%;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+  
+}
+
+.cubo{
+    transform-style: preserve-3d;
+    transform: rotateY(-30deg) rotateX(-30deg);
+    margin: 200px auto;
+   
+  
+}
+
+.cubo, .cara{
+    height: 300px;
+    width: 300px;
+    
+}
+
+.cara{
+    background-color: black;
+    position: absolute;
+    border:2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+ 
+   
+}
+
+.pieza{
+
+    border:5px solid black;
+    width: 95px;
+    height: 95px;
+    border-radius: 12%;
+   
+}
+
+.cubo .cara__roja{
+    transform: translateZ(150px);
+}
+.cubo  .cara__roja .pieza{
+    background-color: red;
+}
+
+.cubo .cara__azul {
+    transform:rotateY(-90deg);
+    left: 150px
+}
+
+.cubo .cara__azul .pieza{
+    background-color: blue;
+}
+
+.cubo .cara__verde {
+    transform:rotateX(90deg);
+    top: -150px;
+} 
+
+.cubo .cara__verde .pieza{
+    background-color: green;
+}
+
+.cara:hover{
+    color:aqua
+
+}
+.cara {
+   cursor: pointer;
+}

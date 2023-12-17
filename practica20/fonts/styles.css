@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'BestalineSans-vm5VM';
+  src: url(./BestalineSans-vm5VM.eot);
+  src: url(./BestalineSans-vm5VM.eot?#iefix) format('embedded-opentype'),
+       url(./BestalineSans-vm5VM.otf) format('otf'),
+       url(./BestalineSans-vm5VM.svg#BestalineSans-vm5VM) format('svg'),
+       url(./BestalineSans-vm5VM.ttf) format('truetype'),
+       url(./BestalineSans-vm5VM.woff) format('woff'),
+       url(./BestalineSans-vm5VM.woff2) format('woff2');
+}

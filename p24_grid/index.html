@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Grid </title>
+</head>
+<body>
+    
+  <div class="grid__container">
+<div class="grid__item grid__item--1">1</div>
+<div class="grid__item">2</div>
+<div class="grid__item">3</div>
+<div class="grid__item">4</div>
+<div class="grid__item grid__item--special">5</div>
+<div class="grid__item">6</div>
+<div class="grid__item">7</div>
+<div class="grid__item">8</div>
+<div class="grid__item">9</div>
+<div class="grid__item">10</div>
+<div class="grid__item">11</div>
+<div class="grid__item">12</div>
+  </div>
+  <script>
+    const flexItems = document.querySelectorAll('.grid__item');
+    flexItems.forEach((flexItem,index) => {
+        const color = 'hsl('+ Math.floor(280 -(index*(280/flexItems.length)))+', 100%, 50%)';
+        flexItem.style.background = color;
+    });   
+</script>
+
+
+</body>
+</html>

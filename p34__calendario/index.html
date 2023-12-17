@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucle Excersise</title>
+</head>
+<body>
+    <script>
+
+const meses = ["enero", "febrero", "marzo","abril", "mayo", "junio", "julio","agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+
+const diasSemana ={
+    lunes: "L",
+    martes: "M",
+    miercoles:"X",
+    jueves:"J",
+    viernes: "V",
+    sabado: "S",
+    domingo: "D",
+
+}
+
+//creo un contenedor
+document.body.innerHTML = '<div class="container"></div>';
+
+//Capturo el contenedor en js 
+
+ const container = document.querySelector('.container');
+
+
+ //aplico estilo grid al contenedor
+
+ container.style.display ="grid";
+ container.style.gridTemplateColumns ="repeat(4, 1fr)";
+ container.style.border ="1px solid #000";
+
+ //recorro el array y en cada mes aplico una funcion (callback)
+ meses.forEach((mes)=>{
+  container.innerHTML += `<div class="mes-${mes}" style="padding:10px; border:1px solid #000; text-align:center"><h3>${mes}</h3></div>`;
+
+//capturamos mes 
+const mesActual = document.querySelector('.mes-' + mes);
+const tituloMes = document.querySelector('.mes-' + mes + ' h3');
+tituloMes.style.gridColumn = "span 7";
+//Estilos a mes 
+mesActual.style.display ="grid";
+mesActual.style.gridTemplateColumns = "repeat(7, 1fr)";
+
+
+//convierto onjecto en array
+//Object.keys(diasSemana); // esto me da los keys
+//Object.values(diasSemana); // esto me da los values;
+//Object.entries(diasSemana); // me da keays y values;
+
+
+//creo contenedor para header de dias 
+mesActual.innerHTML += `<div class="dias-title-${mes}">`;
+
+//capturo header de dias 
+const diasSemanaHeading = document.querySelector('.dias-title-' + mes);
+
+
+//ajusto maquetacion para que no se distorsiona el grid
+diasSemanaHeading.style.gridColumn ="span 7"
+diasSemanaHeading.style.display = "grid";
+diasSemanaHeading.style.gridTemplateColumns ="repeat(7, 1fr)";
+
+
+// pinto con un loop los dias de la semana dentro del contenedor dias 
+Object.values(diasSemana).forEach((dia) =>{
+    diasSemanaHeading.innerHTML += `<p style="font-weight: 800">${dia}</p>`;
+})
+
+//console.log(Object.keys(diasSemana));
+
+
+//inyectamos los dias de la semana 
+
+let dias = 31; 
+if(mes == "febrero") dias = 29;
+if(mes == "abril" || mes == "junio" || mes == "septiembre" || mes == "noviembre") dias = 30;
+
+//creo dias de la semana 
+mesActual
+
+
+//creo un bucle de 31 iteracciones, uno para cada dia
+for(let i = 1; i<=dias; i++ ){
+    mesActual.innerHTML += `<span style="padding:5px">${i}</span>`
+}
+
+
+
+
+ });
+
+
+
+
+
+
+    </script>
+ 
+    
+</body>
+</html>

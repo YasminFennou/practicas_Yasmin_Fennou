@@ -1,0 +1,110 @@
+* {padding: 0; margin: 0; border: none; box-sizing: border-box;}
+
+
+.contenedor {
+    padding: 0 400px 200px 400px;
+}
+
+
+.titulo { 
+    background-color: black;
+    padding: 30px;
+
+}
+h1 {
+    text-align:center;
+    color: white;
+    font-size: 30px;
+    letter-spacing: -2px;
+}
+
+
+.encabezado {
+    background-color: yellow;
+    padding:50px ;
+    padding-bottom: 0;
+}
+
+
+.encabezado-titulo {
+   color: rgb(255, 255, 255);
+   font-size: 120px;
+   font-weight: 900;
+   letter-spacing: 4px;
+   overflow: hidden;
+   white-space:nowrap;
+
+}
+
+.parrafos-superiores {
+    padding: 30px;
+    padding-left:70px;
+    background-color:rgb(255, 252, 247); 
+    display: flex;
+    flex-direction:row;
+    margin-top: 10px;
+    
+}
+
+.parrafo1, .parrafo2, .parrafo3 {
+    word-break: break-all;
+    margin-right: 20px;
+    justify-content: center;
+
+}
+.parrafo1 {
+    margin-left: -20px;
+}
+
+.parrafo1:first-letter {
+    font-size: 20px;
+    font-weight: 900;
+    color: red;
+}
+
+.parrafo-central{
+    padding: 50px;
+    font-size: 20px;
+    font-weight: 1000;
+    letter-spacing: 8px;
+}
+
+.parrafos-inferiores {
+    display:flex;
+    margin: 30px;
+}
+.parrafoizq {
+    font-size: 13px;
+    text-align: right;
+    margin-right: 60px;
+    line-height:1.7; 
+    
+}
+
+.parrafodrch {
+    font-size: 150px;
+    margin-top: -40px;
+  
+    
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 30px;
+    margin:-35px 0;
+    text-align:right;
+    font-size: 20px;
+}
+
+
+.efecto-espejo {
+    -webkit-box-reflect: below -10px;
+    background: -webkit-linear-gradient(left top, rgb(105, 96, 96), rgb(216, 216, 180));
+    background: linear-gradient(to bottom right, rgb(105, 96, 96), rgb(216, 216, 180));
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;  
+}  
+    
+
