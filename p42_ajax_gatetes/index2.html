@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API CATS</title>
+</head>
+<body>
+
+    <style>
+        img{
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+        
+        .grid-gatitos{
+           display: grid;
+           grid-template-columns: repeat(3, 1fr); 
+        }
+
+    </style>
+
+    <div class="grid-gatitos"></div>
+
+    <script>
+        const gatitoContainer = document.querySelector('.grid-gatitos');
+        function createGatitos(gatitosObj){
+            console.log(gatitosObj)
+
+            gatitosObj.forEach(gatitoItem =>{
+                const gatito = document.createElement('img');
+                gatito.src = gatitoItem.url;
+                gatitoContainer.appendChild(gatito);
+            })
+        }
+
+        fetch('https://api.thecatapi.com/v1/images/search?api_key=live_ewNHsf0KWC0CF6eLAoFj3877QNS69T8nBCY80ZE2LhPNnitsLjrJ17CFb7h4hoQX&limit=15')
+        .then(response => response.json())
+        .then(data => createGatitos(data))
+        //sintaxis abreviada: solu fincona si hay uno -un parametro y una llamada
+        
+
+        /*formula
+        fetch()
+            .then((string) =>{
+                string.json()
+                .then((data) =>{
+                    console.log(data)
+                })
+            })
+        */
+    </script>
+</body>
+</html>

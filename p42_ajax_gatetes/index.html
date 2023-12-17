@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        img { width: 100%; display: block; object-fit: cover; height: 100%;}
+       .gatete-grid {
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(2,250px);
+       }
+    </style>
+    <div class="gatete-grid"></div>
+    <script>
+        const gateteContainer = document.querySelector('.gatete-grid');
+        function getGatete(){
+            return fetch('https://api.thecatapi.com/v1/images/search?api_key=live_DtmFOwo6TJqgQe7VYbFj53nC6WysREreSvei03cSwLTMFfw9X4TqPDzxHsJJY9ZA&limit=10')
+                    .then((response)=> response.json())
+                    .then((data)=>{
+                        // guardo respuesta en variable
+                        const gatetesArray = data;
+                        
+                        // creo fragmento
+                        const fragment = new DocumentFragment();
+
+                        // recorro array gatetes con foreach y pinto gatetes
+                        gatetesArray.forEach(gateteItem => {
+                            const gateteImage = document.createElement('img');
+                            gateteImage.src = gateteItem.url;
+                            fragment.append(gateteImage);
+
+                        });
+                        gateteContainer.appendChild(fragment);
+
+                        sendGateteThreeToBack(gatetesArray[2]);
+                    });
+        }
+
+        function sendGateteThreeToBack(gateteThree) {
+            return fetch('backend/jsonReceive.php', {
+                method: "POST",
+                body: JSON.stringify(gateteThree),
+                mode: "cors"
+            })
+                    .then((response)=> response.json())
+                    .then((data)=>{
+                        
+                        const gateteRecibido = JSON.parse(data)
+                        console.log(gateteRecibido)
+                       document.body.innerHTML += gateteRecibido.url
+                    });
+        }
+        
+
+        //llamo a la función para crear gatetes
+        getGatete();
+
+
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,59 @@
+
+
+table {
+    border: 5px solid blueviolet;
+    border-collapse: collapse;
+
+}
+
+.carton {
+    background-color: rgb(248, 235, 246);
+    width: 90px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+td {
+    width: 70px;
+    height: 50px;
+    text-align: center;
+    border: 3px solid blueviolet;
+    font-weight: bold;
+}
+
+/*Colores de fondo */
+.rojo {
+    background-color: rgb(249, 183, 249)
+}
+
+.verde {
+    background-color: #fab3b3;
+}
+
+.azul {
+    background-color: #8afa9d; 
+}
+
+.rosa {
+    background-color: #6dc7f7;
+
+}
+ .amarillo {
+
+    background-color: rgb(209, 181, 240);
+ }
+
+
+ .negro {
+    background-color: rgb(248, 213, 162);
+ }
+  
+th {
+    width: 70px;
+    height: 50px;
+    text-align: center;
+    border: 3px solid blueviolet;
+    font-weight: bold;
+    background-color: blanchedalmond;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+} 

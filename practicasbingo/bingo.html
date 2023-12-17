@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bingo Colorado</title>
+</head>
+<body>  
+    <h1>Cartón de Bingo</h1>
+
+
+    <table>
+        <div>
+            <div>
+                <td class="carton" rowspan="6">BINGO</td>
+            </div>
+
+        <tr>
+            <td class="rojo">8</td>
+            <td class="verde">4</td>
+            <td class="azul">2</td>
+            <td class="rosa">1</td>
+            <td class="amarillo">3</td>
+            <td class="negro">1</td>
+        </tr>
+        <tr>
+            <td class="rosa">4</td>
+            <td class="rojo">8</td>
+            <td class="verde">2</td>
+            <td class="azul">17</td>
+            <td class="amarillo">47</td>
+            <td class="rojo">0</td>
+        </tr>
+        <tr>
+            <td class="azul">54</td>
+            <td class="verde">2</td>
+            <td class="rojo">18</td>
+            <td class="rosa">26</td>
+            <td class="amarillo">20</td>
+            <td class="negro">5</td>
+        </tr>
+        <tr>
+            <td class="rosa">8</td>
+            <td class="azul">27</td>
+            <td class="verde">41</td>
+            <td class="rojo">31</td>
+            <td class="amarillo">21</td>
+            <td class="negro">95</td>
+        </tr>
+        <tr>
+            <td class="verde">25</td>
+            <td class="rojo">47</td>
+            <td class="azul">78</td>
+            <td class="rosa">79</td>
+            <td class="amarillo">41</td>
+            <td class="negro">20</td>
+         </tr>
+    </div>
+    
+    </table>
+  </body>
+ </html>
+ 
+ 
+ <div>  
+    <button id="cambiarColoresButton">Pulsa para que cambie de colorinchi</button>
+    </div>
+    
+    <script>
+        const colores = ["rojo", "verde", "azul", "rosa", "amarillo", "negro"];
+        const celdas = document.querySelectorAll("td");
+    
+    function cambiarColores () {
+        celdas.forEach(celda => {
+           if (celda.textContent !=="BINGO" ){
+            const colorAleatorio = colores[Math.floor(Math.random() * colores.length)];
+            celda.className = colorAleatorio;
+             }      
+        });
+    }
+    
+    const cambiarColoresButton = document.getElementById("cambiarColoresButton");
+    cambiarColoresButton.addEventListener("click", cambiarColores);
+    </script>
+</div>
