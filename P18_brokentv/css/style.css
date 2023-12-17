@@ -1,0 +1,96 @@
+*{
+    padding: 0; margin: 0; box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+.tv {
+    padding:30px; 
+    border: 4px solid yellow;
+    display: inline-flex;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 100%;
+    max-width:800px;
+    position:relative;
+}
+
+.tv__screen {
+border: 4px solid yellow;
+height: 600px;
+width: 100%;
+border-radius: 20px;
+overflow: hidden;
+}
+
+
+.tv__image {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    
+
+}
+
+
+.tv__buttons {
+    margin-top:20px;
+   
+}
+
+.tv__buttons-item {
+    padding: 5px 10px;
+    background-image: linear-gradient(to bottom, #FFFF99, #FFFF66, #FFFF33, #FFFF00, #FFFF33, #FFFF66, #FFFF99);
+   
+}
+.tv__buttons-item:hover {
+    background-image: linear-gradient(to bottom, #FFD700, #FFA500, #FFD700); /* Cambia el degradado al pasar el mouse */
+}
+
+.tv__buttons-8 {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    max-width:200px;
+    gap:5px;
+
+}
+.tv__buttons {
+    display:flex;
+    justify-content: space-between;
+}
+
+.tv__buttons-on-off {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#fff;
+}
+
+.tv__btn-on {
+    background-color: rgb(244, 191, 134);
+    width: 60px;
+    height: 30px;
+}
+.tv__btn-sint {
+    width: 60px;
+    height: 10px;
+    background-image: linear-gradient(to bottom, #FFFF99, #FFFF66, #FFFF33, #FFFF00, #FFFF33, #FFFF66, #FFFF99);
+}
+.tv__leg {
+    position: absolute;
+    height:30px;
+    width: 80px;
+    background-color: yellow;
+    bottom: -34px;
+
+}
+
+
+.tv__leg--left {
+    left:10%; 
+
+}
+.tv__leg--right {
+    right:10%; 
+
+}
+
+

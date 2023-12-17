@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+     /*selector universal*/
+
+     *{
+        color: pink;
+
+     }
+      /*selectorpor etiqueta*/
+
+      label {
+         font-size: 40px;
+      }
+     /*selector por clase*/
+      .my-label {
+        color: aqua;
+      }
+       
+      /*selector por id*/
+      #nombre {
+       
+      }
+      /*selector por atributo*/
+
+      [type] {
+        /*border-width: 8px;*/
+      }
+      
+      [type="number"] {
+        /*border-width: 8px;*/
+      }
+      
+      [type*="num"] {
+        /*border-width: 8px;*/
+      }
+
+      /*selector compuesto*/
+      .my-label.nombre {
+        color: purple;
+      }
+
+      li {
+        color:black;
+      }
+       li.active {
+        color: green;
+       }
+
+       input#nombre {
+        color: blueviolet;
+       }
+
+       label.my-label {}
+
+       /*selector anidado*/
+      /*section div div*/
+
+      /*selector multiple*/
+
+      label,input {
+        display: block;
+      }
+       
+
+    </style>
+    <form action="">
+        <div>
+            <label for="nombre" class="my-label nombre">Yasmin</label>
+            <input type="text" id="nombre">
+        </div>
+        <div>
+            <label for="vacaciones">Ganas de vacaciones</label>
+            <input type="range" name="vacaciones" id="vacaciones">
+        </div>
+        <section>
+            <label for="" class="myLabel edad">edad</label>
+            <input type="number">
+        </section>
+    </form>
+    <ul>
+        <li>item</li>
+        <li>item</li>
+        <li class="active">item</li>
+    </ul>
+</body>
+</html>

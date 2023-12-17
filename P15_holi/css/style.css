@@ -1,0 +1,16 @@
+ *{margin:0; padding: 0; box-sizing: border-box;}
+
+
+div div {
+    font-size: 20vw;
+    background-color: blue;
+    width: 50vw;
+    height: 50vw;
+}
+
+
+
+div {
+       background: linear-gradient(90deg, rgb(3, 3, 16), rgb(13, 13, 70),rgb(15, 15, 125), rgb(31, 31, 221));
+       padding: 4%;
+}

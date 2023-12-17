@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Old+Uyghur&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulario Fitnnes Park</title>
+</head>
+<body>
+    <form action="form_receive.php" name="usuario_gym" enctype="application/x-www-form-urlencoded" method="post">
+      <fieldset class="datos">
+          
+        <label for="nameInput"> Introduce tu nombre</label>
+        <input type="text" id="nameInput" name="user_name" size="20"  required>
+
+        <label for="surnameInput"> Introduce tu apellido</label>
+        <input type="text" id="surnameInput" name="user_surname" size="20" required>
+      </fieldset>
+
+        <fieldset class="salud">
+            <legend>Cuestionario</legend>
+            <label for="age18Input">Soy mayor de edad</label>
+            <input type="checkbox" name="user_mind" id="age18Input">
+
+            <label for="MentalHealthInput">Estoy en pleno uso de mis facultades mentales</label>
+            <input type="checkbox" name="user_mind" id="MentalHealthInput" >
+            
+            <label for="heartInput">No tengo problemas cardiacos</label>
+            <input type="checkbox" name="user_mind" id="HeartInput">
+        </fieldset>
+
+        <fieldset class="genero">
+            <legend>Genero</legend>
+            <label for="sexManInput">Hombre</label>
+            <input type="radio" name="user_sex" id="sexManInput">
+       
+            <label for="sexWomanInput">Mujer</label>
+            <input type="radio" name="user_sex" id="sexWomanInput">
+       
+            <label for="noInput">Prefier no decirlo</label>
+            <input type="radio" name="user_sex" id="noInput">   
+        </fieldset>
+
+       <fieldset class="deporte">
+        <label for="DeporteInput">Elige tu deporte</label>
+        <select name="deporte" id="DeporteInput">
+            <option value="Crossfit">
+                Crossfit
+            </option>
+            <option value="Spinning" selected>
+                Spinning
+            </option>
+            <option value="Kung fu">
+                Kung fu
+            </option>
+        </select>
+       </fieldset>
+   <fieldset class="comentarios">
+    <label for="comentsInput"> Introduce tus comentarios</label>
+    <textarea name="user_coments" id="comentsInput" placeholder="escribe tus comentarios aqui"></textarea>
+   </fieldset>
+
+
+  <fieldset class="contraseña">
+    <label for="password">Introduce tu contraseña:</label>
+    <input type="password" id="password" name="password">
+    <input type="checkbox" id="mostrarContrasena"> 
+  </fieldset>
+
+  <fieldset>
+    <div >
+        <input type="submit" value="ENVIAR">
+    </div>
+</fieldset>
+
+    </form>
+    
+    <script>
+        const passwordInput = document.getElementById('password');
+        const mostrarContrasenaCheckbox = document.getElementById('mostrarContrasena');
+
+        mostrarContrasenaCheckbox.addEventListener('change', function () {
+            if (mostrarContrasenaCheckbox.checked) {
+                passwordInput.type = 'text'; // Cambiar el tipo de entrada a texto
+            } else {
+                passwordInput.type = 'password'; // Cambiar el tipo de entrada a contraseña
+            }
+        });
+    </script>
+
+
+
+</body>
+</html>

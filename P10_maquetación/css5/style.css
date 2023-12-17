@@ -1,0 +1,107 @@
+* {padding: 0; margin: 0; border: none; box-sizing: border-box;}
+
+.anidacion {
+    background-color: #c0392b;
+    padding: 20px;
+}
+
+
+
+.anidacion-rosa {
+    background-color:#E74C3C;
+    padding: 20px;
+}
+
+.anidacion-verde {
+    background-color: #9B59B6;
+    padding: 20px;
+    
+
+}
+
+.anidacion2  {
+    background-color: 
+    #8E44AD;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+.anidacion-azul {
+    background-color: #2980B9;
+    padding: 20px;
+}
+
+.anidacion-lila {
+    background-color:#3498DB;
+    padding: 20px;
+    
+
+}
+
+
+
+.anidacion3  {
+    background-color:#1ABC9C;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+.anidacion-naranja {
+    background-color: #16A085;
+    padding: 20px;
+}
+
+.anidacion-amarilla {
+    background-color: #27AE60;
+    padding: 20px;
+    
+
+   }
+
+   
+.anidacion4  {
+    background-color: #2ECC71;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+.anidacion-beige {
+    background-color:#F1C40F;
+    padding: 20px;
+}
+
+.anidacion-marron {
+    background-color: 
+    #F39C12;
+    padding: 20px;
+    
+
+}
+
+
+
+
+.imagen {
+    display: flex;
+    width: 100px;
+    height: 100px;
+
+
+}
+
+.imagen2 {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    float: right;
+
+}
+
+
+.tercertexto {
+
+    padding-top: 30px;
+}

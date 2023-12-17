@@ -1,0 +1,96 @@
+* {padding: 0; margin: 0; border: none; box-sizing: border-box;}
+
+/* esto es la letra de todo el texto de cuerpo*/
+body {
+        font-family:'Times New Roman', Times, serif;
+       
+        }
+
+
+/*el encabezado del periodico donde pone el nombre*/
+  header {
+        background-color: #222;
+        color:#f8e1e1;
+        text-align: center;
+        padding: 5px;
+        
+        }
+/*el menu donde le puedes dar click y te lleva a diferentes paginas */
+.Header_menu, a {
+        
+        background-color: #222;
+        text-decoration: none;
+        color: #f8e1e1;
+        display: flex; 
+        justify-content: space-between;
+        padding: 20px;
+        list-style: none;
+        }
+/*esto seria el bloque de los dos textos izq y drch*/
+.texto {
+        display: flex;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+       }
+
+       /*el texto izquierdo*/
+.textoizq {
+        padding: 20px;
+        margin-right: 20px;
+        margin-top: 10px;
+        background-color: rgb(248, 245, 242);
+        width: 900px;
+}
+
+/* el texto derecho*/
+.textodrch {
+        padding-right: 300px;
+        margin-top: 10px;
+        background-color: rgb(248, 245, 242);
+        width: all;
+        height: 800px;
+}
+/* el encabezado de la noticia del dia*/
+.encabezado {
+        font-size: 40px;
+        padding-bottom: 10px;
+        padding-bottom: 10px;
+        }
+ /*el pie del periodico donde estan los derechos de autor*/
+ footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+         }  
+
+ /*el titular de la noticia para ponerlo en negrita*/
+.titular {
+        font-weight: 800;
+
+}
+/*las imagenes de los perros*/
+.perro {
+        height: 300px;
+        
+}
+ /* el parrafo de las imagenes para separarlo*/
+.parrafo {
+        display: flex;
+       
+        margin: 80px;
+        
+     } 
+
+/*la descripcion del titular*/
+     .descripcion{
+        margin-top: 30px;
+     }
+ 
+     .contenido {
+             margin-right: 30px;
+
+     }
+ 
+    

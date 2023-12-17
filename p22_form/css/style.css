@@ -1,0 +1,67 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+
+body {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Noto Serif Old Uyghur', serif;
+    
+}
+
+form {
+    background-color: rgb(235, 235, 255);
+    border: 4px solid #DDD;
+    width: 800px;
+    padding: 20px;
+}
+
+ input {
+    display:flex;
+
+}
+
+label {
+    margin-top: 30px; 
+}
+
+
+fieldset {
+    border:none; 
+}
+
+textarea {
+    width:100%;
+    height:100px; 
+}
+
+
+.datos {
+    margin-top: 5px;
+
+}
+
+.salud {
+    margin-top: 20px;
+
+}
+
+.genero {
+
+    margin-top: 20px;
+}
+
+.deporte  {
+    margin-top: 20px;
+
+}
+
+.comentarios {
+    margin-top:20px;
+}
+
+
+.contraseña {
+    margin-top:20px;
+    margin-bottom: 10px;
+}

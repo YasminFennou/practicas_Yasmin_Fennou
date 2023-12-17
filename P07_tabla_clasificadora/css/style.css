@@ -1,0 +1,46 @@
+table {
+    border: 5px solid rgb(189, 147, 228);
+    
+}
+
+td {
+    width: 90px;
+    height: 50px;
+    text-align: center;
+font-weight: bold;
+}
+
+ th {
+  background-color: #f2f2f2;
+       
+}
+.casilla4 {
+    width: 120px;
+    
+}
+ 
+.linea1 {
+    background-color: rgb(243, 172, 238);
+
+}
+
+.linea2 {
+
+    background-color: rgb(221, 185, 255);
+}
+
+.linea3 {
+    background-color: rgb(235, 213, 255);
+}
+
+.linea4 {
+    background-color: rgb(219, 177, 255);
+}
+
+.linea5 {
+    background-color: rgb(218, 194, 240);
+}
+
+.linealarga {
+    background-color:rgb(235, 213, 255) ;
+}

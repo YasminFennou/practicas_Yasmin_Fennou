@@ -1,0 +1,117 @@
+*{margin:0; padding: 0; box-sizing: border-box;}
+
+.contenedor {
+    background: linear-gradient(to left, #ff4d4d, #ff99cc);
+    padding: 0 200px 200px 200px;
+}
+
+
+img {
+    width:40px
+}
+
+
+.container {
+    width:100%;
+    max-width: 900px;
+    padding: 30px;
+    background-color:rgb(253, 251, 243);
+    margin:0 auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.header {
+    display:flex;
+
+}
+.header__left {
+    padding-top: 50px;
+    font-family: 'Lobster', sans-serif;
+    font-size: 36px;
+}
+
+.header__left, .header__right {
+    flex-basis:50%;
+}
+
+.header__title-top {
+    color: #ff7081;
+}
+
+.header__title-bottom {
+    color: rgb(248, 32, 241);
+    display:flex;
+}
+
+.header__heart-img {
+    width:20px;
+}
+.header__right {
+    color: #fb7d8b;
+    padding-left: 20px;
+    font-size: 28px;
+}
+
+.container__frases, .container__frases4 {
+    width:100%;
+    max-width: 900px;
+    padding: 30px;
+    padding-right: 40px;
+    background-color:rgb(253, 251, 243);
+    margin:0 auto;
+    border-radius: 10px;
+    border-top: 4px  dashed rgb(126, 169, 197) ;
+    border-left: 4px  dashed rgb(126, 169, 197) ;
+    border-right: 4px  dashed rgb(126, 169, 197) ;
+   
+}
+.container__frases4 {
+    border-bottom: 4px dashed rgb(126, 169, 197) ;
+
+}
+
+
+.frases {
+    display:flex;
+    margin-left: 30px;
+    
+}
+.frases__azules--1 {
+    margin-right: 20px;
+}
+
+.frases__azules, .frases__azules--1 {
+   color: rgb(15, 212, 252);
+}
+.frases__rosas {
+    color: rgb(255, 95, 234);
+}
+
+.corazon-rosa {
+    position: absolute;
+    top:700px;
+    left:910px; 
+    transform: rotate(-15deg);
+}
+.corazon-rosa2 {
+    position: absolute;
+    top:345px;
+    left:410px; 
+    transform: rotate(-20deg);
+}
+
+.corazon-azul {
+    position: absolute;
+    top:550px;
+    left:600px; 
+    transform: rotate(30deg);
+    
+}
+.corazon-azul2 {
+    position: absolute;
+    top:880px;
+    left:680px; 
+    transform: rotate(-30deg);
+    
+}

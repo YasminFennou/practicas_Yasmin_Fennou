@@ -1,0 +1,111 @@
+* {padding: 0; margin: 0; border: none; box-sizing: border-box;}
+
+img {
+    width:100%;
+}
+.container {
+  height:100vh;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+
+}
+.yoga-lady {
+    width: 600px;
+    z-index:3;
+    position:relative;
+}
+.chakra__chakra {
+    display:flex;
+    position: absolute;
+    width:600px ;
+    top:50%; 
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 3%;
+    height: 3%;
+   
+}
+ 
+.chakra__chakra--red{
+    top: 60%;
+    left: 50%;
+}
+
+.chakra__chakra--yellow{
+    top: 60%;
+    left: 50%;
+}
+
+.chakra__chakra--blue{
+    top: 40%;
+    left: 50%;
+}
+.chakra__chakra--indigo{
+    top: 35%;
+    left: 50%;
+}
+
+.chakra__chakra--purple{
+    top: 30%;
+    left: 50%;
+}
+
+.chakra__chakra--green{
+    top: 45%;
+    left: 50%;
+}
+.chakra__chakra--yellow{
+    top: 55%;
+    left: 50%;
+}
+@keyframes spin {
+    from {transform:rotate (0deg);}
+    to {transform:rotate(360deg);}
+}
+
+#rueda {
+    animation: spin 4s infinite linear;
+    transform-origin: center;
+}
+
+.chakra__chakra--red:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px red;
+    
+}
+
+.chakra__chakra--yellow:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px yellow;
+}
+
+.chakra__chakra--orange:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px orange;
+}
+
+
+.chakra__chakra--green:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px rgb(81, 214, 81);
+}
+
+
+.chakra__chakra--indigo:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px blue;
+}
+
+
+.chakra__chakra--blue:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px aqua;
+}
+
+
+.chakra__chakra--purple:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px violet;
+}
+

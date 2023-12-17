@@ -1,0 +1,51 @@
+* {padding: 0; margin: 0; border: none; box-sizing: border-box;}
+
+.anidacion {
+    background-color: gray;
+    padding: 20px;
+}
+
+
+
+.anidacion-rosa {
+    background-color: pink;
+    padding: 20px;
+}
+
+.anidacion-verde {
+    background-color: greenyellow;
+    padding: 20px;
+    
+
+}
+
+.anidacion2  {
+    background-color: gray;
+    padding: 20px;
+    margin: 20px;
+   
+
+
+}
+
+.imagen {
+    display: flex;
+    width: 100px;
+    height: 100px;
+
+
+}
+
+.imagen2 {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    float: right;
+
+}
+
+
+.tercertexto {
+
+    padding-top: 30px;
+}

@@ -1,0 +1,67 @@
+*{padding: 0; margin:0; box-sizing: border-box;}
+
+
+.parrafo-alternativo {
+    color: violet;
+}
+
+ 
+#spanElement {
+    background-color: blue;
+    opacity: 50%;
+}
+
+[title="elemento Discolo Rojo"] {
+    background-color: red;
+    opacity:70%;
+}
+.section1 {
+    color: pink;
+}
+
+.parrafo-alternativo.con-background {
+    background-color: pink;
+}
+
+section div {
+    color: yellow;
+}
+
+.section-3 p:first-child {
+    color: red;
+}
+
+.section-3 p:nth-child(2) {
+    color: green;
+}
+
+.section-3 p:last-child {
+    color:blue;
+}
+
+.section-2 > p {
+    font-size: 21px;
+}
+ 
+h1:first-letter {
+    color: red;
+}
+
+
+p:hover {
+    color:orange;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+/*es para cualquier tipo de identificador y entre el parentesis para cualquier tipo de identificador que no quiero que se cumpla*/
+p:not(.parrafo-alternativo) {
+    border: 3px solid black;
+}
+
+.section-3::before {
+    content:"hola soy un before"
+}
+.section-3::after {
+    content:"hola soy un before"
+}
